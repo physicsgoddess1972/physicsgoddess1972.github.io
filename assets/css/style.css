@@ -65,7 +65,6 @@ html {
 }
 
 body {
-	background: #fff;
 	position: static;
 	overflow-x: hidden;
 }
@@ -129,7 +128,7 @@ body, button, input, select, textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	color: #47525c;
+	color: #BCC8D3;
 	font-weight: normal;
 	line-height: 1.2;
 	margin-bottom: 3%;
@@ -8903,4 +8902,143 @@ table tr th :last-child, .content table tr td :last-child{
 
 	/* Support for IE. */
 	font-feature-settings: 'liga';
+}
+
+.panel {
+	border-bottom: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: black;
+	background-color: #fff;
+	padding: 2rem;
+}
+.collapsible {
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: .5rem 0 1rem 0
+}
+
+.collapsible-header {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	line-height: 1.5;
+	padding: 1rem;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd
+}
+
+.collapsible-header:focus {
+	outline: 0
+}
+
+.collapsible-header i {
+	font-size: 1.6rem;
+	display: inline-block;
+	text-align: center;
+	margin-right: 1rem
+}
+
+@media only screen and (max-width: 700px){
+	.collapsible{
+		width: 100%;
+		border: 0px;
+		margin: 0 0 0 0px;
+	}
+	.collapsible-header {
+		margin: 0px;
+		padding: 0px;
+	}
+	.panel{
+		margin: 0 0 0 0px;
+		width: inherit;
+		border: 0px;
+		-webkit-box-shadow: 0px;
+		box-shadow: 0px;
+	}
+	.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+		-webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 0px 0px rgba(0, 0, 0, 0.12), 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 0px 0px rgba(0, 0, 0, 0.12), 0 0px 0px 0 rgba(0, 0, 0, 0.2)
+	}
+	.collapsible .panel{
+		margin: 0px;
+	}
+}
+
+/*************************************************
+ *  Projects
+ **************************************************/
+.project-widget-simple li {
+	margin-bottom: 1rem
+}
+
+.project-widget-simple li:last-of-type {
+	margin-bottom: 0
+}
+
+.project-widget-simple .project-title {
+	margin-bottom: 6px
+}
+
+.project-widget-simple .project-summary {
+	font-size: .9rem;
+	margin-bottom: .4rem
+}
+
+.projects-container {
+	display: block;
+	position: relative;
+	overflow: hidden
+}
+
+.project-toolbar {
+	margin-bottom: 2rem
+}
+
+.project-card {
+	position: relative;
+	width: calc(33.3% - 2*20px)
+}
+
+@media screen and (max-width: 1199px) {
+	.project-card {
+		width:calc(50% - 20px)
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.project-card {
+		width:100%
+	}
+}
+
+.project-item {
+	margin-bottom: 1.5rem
+}
+
+.project-card.project-item {
+	margin: 0 0 20px
+}
+
+.project-card .card {
+	margin: 0
+}
+
+.project-showcase .project-item {
+	margin-bottom: 3rem
+}
+
+.project-item:last-of-type {
+	margin-bottom: 0
+}
+.isotope-item {
+	z-index: 2;
+}
+
+.isotope-item:hover {
+	z-index: 3;
 }
