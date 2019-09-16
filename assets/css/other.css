@@ -66,7 +66,10 @@ td {
 }
 
 hr {
-    background-color: #cfbca6;
+	border: 0;
+	height: 2px;
+	background: #333;
+	background-image: linear-gradient(to right, #4BC9C3, #0000ff);
 }
 
 ol,
