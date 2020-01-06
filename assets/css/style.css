@@ -2080,16 +2080,30 @@ embed, iframe, object {
 }
 
 .entry-header {
-	position: relative;
+	position: fixed;
 	display: inline-block;
 	width: 38%;
 	vertical-align: top;
-	padding-right: 5%;
+	padding-right: 10%;
 	font-size: 1.4rem;
 }
-
+@media (min-width: 2300px) {
+	.entry-header {
+		position: fixed;
+		width: 38%;
+		padding-right: 40%;
+	}
+}
+@media (min-width: 1600px) {
+	.entry-header {
+		position: fixed;
+		width: 38%;
+		padding-right: 20%;
+	}
+}
 @media (max-width: 800px) {
 	.entry-header {
+		position: relative;
 		width: 100%;
 		padding-right: 0;
 	}
