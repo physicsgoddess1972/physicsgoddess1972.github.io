@@ -28,7 +28,6 @@
 		  if (document.location.protocol != "https:") {
 			  document.location = document.URL.replace(/^http:/i, "https:");
 		  }
-
     </script>
     <script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.jasonbox.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.9"}};
@@ -38,75 +37,66 @@
     <script type='text/javascript' src='./assets/js/jquery.js'></script>
     <script type='text/javascript' src='./assets/js/jquery-migrate.min.js'></script>
 </head>
-
-<body data-rsssl=1 class="home page-template-default page page-id-5">
-    <nav id="site-navigation" class="main-navigation widget" role="navigation">
-        <div class="menu">
-            <ul>
-                <li class="page_item page-item-8"><br/></li>
-                <li class="page_item page-item-37"><br/></li>
-            </ul>
-        </div>
-    </nav><!-- #site-navigation -->
-    <div id="page" class="hfeed site ">
+<body data-target="#navbar-main" class="home page-template-default page page-id-5">
+    <div id="page" class="hfeed site">
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <article id="post-5" class="post post-5 page type-page status-publish hentry">
                     <div class="container content-container">
                         <header class="entry-header">
+							<nav id="navbar-main" class="main-navigation widget" role="navigation">
+								<div class="menu" id="navbar-content">
+									<ul class="navbar-nav">
+										<li class="page_item page-item-8 nav-item">
+                                            <a class="nav-link" href="#research" data-target="#research" style="color: cyan">
+                                                <span>Projects</span>
+                                            </a>
+                                        </li>
+										<li class="page_item page-item-8 nav-item">
+                                            <a class="nav-link" href="#jobs" data-target="#jobs" style="color: cyan">
+                                                <span>How I paid the bills</span>
+                                            </a>
+                                        </li>
+										<li class="page_item page-item-8 nav-item">
+                                            <a class="nav-link" href="#conference" data-target="#conference" style="color: cyan">
+                                                <span>Conferences</span>
+                                            </a>
+                                        </li>
+										<li class="page_item page-item-8 nav-item">
+                                            <a class="nav-link" href="#school" data-target="#school" style="color: cyan">
+                                                <span>Educational history</span>
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+							</nav><!-- #site-navigation -->
                             <h1 class="entry-title">Vicki Kelsey</h1>
                             <div class="entry-subtitle">
                                 <p>
                                     <img class="alignnone size-medium wp-image-40"
-                                         src="./assets/img/image.png" alt="profile pictures"
+                                         src="./assets/img/profile.png" alt="profile pictures"
                                          width="233" height="300"/>
                                 </p>
-                                <table style="border: 0px;">
-                                    <tr>
-                                        <td style="vertical-align: middle"><i class="material-icons">face</i></td>
-                                        <td>Vicki Kelsey, Student</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="vertical-align: middle"><i class="material-icons">school</i></td>
-                                        <td>New Mexico Institute of Mining and Technology</td>
-                                    </tr>
-                                </table>
-                                </p>
                             </div>
-                            <br />
-                            <br />
-                            <div class="entry-subtitle">
-                                <nav>
-                                    <a href="#bio" style="color: cyan;">Biography</a>
-                                    <br/>
-                                    <a href="#research" style="color: cyan">Projects</a>
-                                    <br/>
-                                    <a href="#jobs" style="color: cyan">How I paid the bills</a>
-                                    <br/>
-                                    <a href="#conference" style="color: cyan">Conferences</a>
-                                    <br/>
-                                    <a href="#school" style="color: cyan">Educational history</a>
-                                </nav>
-                            </div>
+							<div id="bio">
+								<h4>Biography</h4>
+								<hr/>
+								<div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515; background-color: #252525">
+									<p style="font-size: 12px">
+										Undergraduate atmospheric physics student at New Mexico Institute of Mining and
+										Technology
+									</p>
+								</div>
+							</div>
                         </header>
                         <div class="entry-content">
                             <div id="fb-root"></div>
-                            <div id="bio">
-                                <h4>Biography <a href="." class="material-icons" style="color:cyan">arrow_upward</a></h4>
-                                <hr/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
-                                    <p>
-                                        Undergraduate atmospheric physics student at New Mexico Institute of Mining and
-                                        Technology
-                                    </p>
-                                </div>
-                            </div>
                             <br />
-                            <div id="research">
+                            <section id="research">
                                 <h4>Projects <a href="." class="material-icons"
                                                               style="color:cyan">arrow_upward</a></h4>
                                 <hr/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h5>Precipitable Water Model</h5>
                                     <p>
                                         Using Infrared temperature reading to determine the amount of precipitable water in the
@@ -114,7 +104,7 @@
                                     </p>
                                 </div>
                                 <br/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h5>Lagrangian Atmospheric Model</h5>
                                     <p>
                                         Tested and troubleshooted Lagrangian Atmospheric Model designed to simulate Madden-Julian
@@ -122,20 +112,20 @@
                                     </p>
                                 </div>
                                 <br/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h5>Battery Testing and Comparison for Use in Off-Grid Home Powered Systems in New Mexico</h5>
                                     <p>
                                         Analyzing cost efficiency of battery types for sub-$700 off-grid solar systems in New
                                         Mexico.
                                     </p>
                                 </div>
-                            </div>
+                            </section>
                             <br/>
-                            <div id="jobs">
+                            <section id="jobs">
                                 <h4>How I paid the bills <a href="." class="material-icons" style="color:cyan">arrow_upward</a>
                                 </h4>
                                 <hr/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h5>Atmospheric Research Catalouger</h5>
                                     <b>Langmuir Lab. Socorro, NM</b>
                                     <p>
@@ -143,7 +133,7 @@
                                     </p>
                                 </div>
                                 <br/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h5>Atmospheric Physics Research Assistant</h5>
                                     <b>New Mexico Tech. Socorro, NM</b>
                                     <p>
@@ -152,7 +142,7 @@
                                     </p>
                                 </div>
                                 <br/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h5>Graduate Data Analysis Student Employee</h5>
                                     <b>Central New Mexico Community College. Albuquerque, NM</b>
                                     <p>
@@ -163,7 +153,7 @@
                                     </p>
                                 </div>
                                 <br/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h5>Test Wafer/Silicon Systems Engineer</h5>
                                     <b>Intel Corp. Leixlip, Ireland</b>
                                     <p>
@@ -175,7 +165,7 @@
                                     </p>
                                 </div>
                                 <br/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h5>Graduate Research Assistant</h5>
                                     <b>Los Alamos National Lab. P-24 Plasma Physics. Los Alamos, NM</b>
                                     <p>
@@ -183,12 +173,12 @@
                                         detail and precision
                                     </p>
                                 </div>
-                            </div>
+                            </section>
                             <br/>
-                            <div id="conference">
+                            <section id="conference">
                                 <h4>Conferences <a href="." class="material-icons" style="color: cyan">arrow_upward</a></h4>
                                 <hr/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515; background-color: #252525">
                                     <h6>Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature
                                         Readings</h6>
                                     <p>
@@ -217,7 +207,7 @@
                                     </a>
                                 </div>
                                 <br />
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h6>Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature
                                         Readings: Field Observations</h6>
                                     <p>
@@ -249,7 +239,7 @@
                                     </a>
                                 </div>
                                 <br />
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h6>Battery Testing and Comparison for Use in Off-Grid Home Powered Systems in New
                                         Mexico</h6>
                                     <p>
@@ -271,45 +261,55 @@
                                         <img src="./assets/img/poster3.png" alt="" />
                                     </a>
                                 </div>
-                            </div>
+                            </section>
                             <br />
-                            <div id="school">
+                            <section id="school">
                                 <h4>Educational History <a href="." class="material-icons" style="color:cyan">arrow_upward</a>
                                 </h4>
                                 <hr/>
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h6>BSc Physics w/ Atmospheric Physics Concentration</h6>
                                     <b>New Mexico Institute of Mining and Technology</b> <br/>
                                     <b>Socorro, NM. Fall 2016 -- Present</b>
                                 </div>
                                 <br />
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h6>Associates Degree, Liberal Arts with emphasis in Math and Physics</h6>
                                     <b>Central New Mexico Community College</b><br/>
                                     <b>2016</b>
                                 </div>
                                 <br />
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h6>Certificate, Semiconductor Manufacturing Technology</h6>
                                     <b>Luna Community College</b><br/>
                                     <b>1996</b>
                                 </div>
                                 <br />
-                                <div style="border-left: 1px solid #202020; padding: 10px; box-shadow: 3px 5px #202020;">
+                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                     <h6>BA, History and French</h6>
                                     <b>Eastern New Mexico University</b><br/>
                                     <b>1994</b>
                                 </div>
-                            </div>
+                            </section>
                         </div>
                    </div>
                 </article><!-- #post-## -->
-                <div class="comments-wrap">l
-                    <div class="comments-inside container"></div><!-- .comments-inside -->
-                </div><!-- .comments-wrap -->
             </div><!-- #primary -->
         </div><!-- #content -->
     </div><!-- #page -->
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+
+
     <script type='text/javascript' src='./assets/js/camera.js?ver=1.0.2'></script>
     <script type='text/javascript' src='./assets/js/hoverIntent.min.js'></script>
 </body>
