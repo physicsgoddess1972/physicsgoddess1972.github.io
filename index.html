@@ -29,13 +29,10 @@
 			  document.location = document.URL.replace(/^http:/i, "https:");
 		  }
     </script>
-    <script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.jasonbox.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.9"}};
-			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src='assets/js/jquery-migrate.min.js'></script>
+    <script src="assets/js/content.js"></script>
 
-    </script>
-    <script type='text/javascript' src='./assets/js/jquery.js'></script>
-    <script type='text/javascript' src='./assets/js/jquery-migrate.min.js'></script>
 </head>
 <body data-target="#navbar-main" class="home page-template-default page page-id-5">
     <div id="page" class="hfeed site">
@@ -70,11 +67,11 @@
 									</ul>
 								</div>
 							</nav><!-- #site-navigation -->
-                            <h1 class="entry-title">Vicki Kelsey</h1>
+                            <h1 class="entry-title" id="name"></h1>
                             <div class="entry-subtitle">
                                 <p>
                                     <img class="alignnone size-medium wp-image-40"
-                                         src="./assets/img/profile.png" alt="profile pictures"
+                                         id="profile-picture" alt="profile pictures"
                                          width="233" height="300"/>
                                 </p>
                             </div>
@@ -82,9 +79,7 @@
 								<h4>Biography</h4>
 								<hr/>
 								<div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515; background-color: #252525">
-									<p style="font-size: 12px">
-										Graduate atmospheric sciences student at South Dakota School of Mines
-									</p>
+									<p style="font-size: 12px" id="biography"></p>
 								</div>
 							</div>
                         </header>
@@ -92,224 +87,31 @@
                             <div id="fb-root"></div>
                             <br />
                             <section id="research">
-                                <h4>Projects <a href="." class="material-icons"
-                                                              style="color:cyan">arrow_upward</a></h4>
+                                <h4>Projects <a href="." class="material-icons" style="color:cyan">arrow_upward</a></h4>
                                 <hr/>
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Precipitable Water Model</h5>
-                                    <p>
-                                        Using Infrared temperature reading to determine the amount of precipitable water in the
-                                        desert south-west.
-                                    </p>
-                                </div>
-                                <br/>
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Lagrangian Atmospheric Model</h5>
-                                    <p>
-                                        Tested and troubleshooted Lagrangian Atmospheric Model designed to simulate Madden-Julian
-                                        Oscillations.
-                                    </p>
-                                </div>
-                                <br/>
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Battery Testing and Comparison for Use in Off-Grid Home Powered Systems in New Mexico</h5>
-                                    <p>
-                                        Analyzing cost efficiency of battery types for sub-$700 off-grid solar systems in New
-                                        Mexico.
-                                    </p>
-                                </div>
+                                <div id="project"></div>
                             </section>
                             <br/>
                             <section id="jobs">
-                                <h4>How I paid the bills <a href="." class="material-icons" style="color:cyan">arrow_upward</a>
-                                </h4>
+                                <h4>How I paid the bills <a href="." class="material-icons" style="color:cyan">arrow_upward</a></h4>
                                 <hr/>
                                 <h4>Current</h4>
-                                <br />
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Lightning Research Technician</h5>
-                                    <b>Langmuir Lab. Socorro, NM</b>
-                                </div>
-                                <br />
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Student Researcher</h5>
-                                    <b>NWS/NOAA. Albuquerque, NM</b>
-                                </div>
-                                <br />
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Atmospheric Science Graduate Teaching Assistant</h5>
-                                    <b>South Dakota School of Mines. Rapid City, SD</b>
-                                </div>
+                                <div id="current"></div>
                                 <br />
                                 <h4>Previous</h4>
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Atmospheric Research Catalouger</h5>
-                                    <b>Langmuir Lab. Socorro, NM</b>
-                                </div>
-                                <br/>
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Atmospheric Physics Research Assistant</h5>
-                                    <b>New Mexico Tech. Socorro, NM</b>
-                                    <p>
-                                        Worked on a project to utilize a Lagrangian Atmospheric Model to forecast Madden Julian
-                                        Oscillations at various sea surface temperatures.
-                                    </p>
-                                </div>
-                                <br/>
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Graduate Data Analysis Student Employee</h5>
-                                    <b>Central New Mexico Community College. Albuquerque, NM</b>
-                                    <p>
-                                        Worked with recent graduates to get their outcomes files updated, while meeting FERPA
-                                        guidelines, and updated the information which was reported to the State of New Mexico and the US Department of
-                                        Education. Helped those graduates looking for employment to make sure that they were utilizing all the
-                                        services available through Job Connection Services at CNM to help them find employment.
-                                    </p>
-                                </div>
-                                <br/>
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Test Wafer/Silicon Systems Engineer</h5>
-                                    <b>Intel Corp. Leixlip, Ireland</b>
-                                    <p>
-                                        Managed silicon supply, quality control, anti-contamination procedures, and cost control for
-                                        high volume
-                                        manufacturing sites worldwide. Worked as part of various engineering teams and had a shared
-                                        supervisory role for
-                                        technicians across multiple sites and departments.
-                                    </p>
-                                </div>
-                                <br/>
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h5>Graduate Research Assistant</h5>
-                                    <b>Los Alamos National Lab. P-24 Plasma Physics. Los Alamos, NM</b>
-                                    <p>
-                                        Worked as part of a team on classified projects that required a high level of attention to
-                                        detail and precision
-                                    </p>
-                                </div>
+                                <div id="previous"></div>
                             </section>
                             <br/>
                             <section id="conference">
                                 <h4>Conferences <a href="." class="material-icons" style="color: cyan">arrow_upward</a></h4>
                                 <hr/>
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515; background-color: #252525">
-                                    <h6>Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature
-                                        Readings</h6>
-                                    <p>
-                                        Precipitable water is primarily measured using radiosondes, ground-based global
-                                        positioning systems (GPS), sun photometers, and microwave radiometry (MWRI). This limits
-                                        the number of precipitable water measurement sites, which affects forecast accuracy in
-                                        regards to storm formation, strength, and the potential for precipitation. Socorro, NM
-                                        is among the sites that do not have the capability to measure precipitable water. Our
-                                        research builds upon a previous study which determined an exponential relationship
-                                        between infrared clear sky temperature measurements and precipitable water over the Gulf
-                                        Coast of Texas. We are analyzing this relationship for the climate zone found in
-                                        Socorro, NM. Daily ground and clear sky temperature measurements are being taken with
-                                        low-cost infrared thermometers. Radiosonde precipitable water measurements from
-                                        Albuquerque and Santa Teresa NWS monitoring sites are input into our dataset and
-                                        analysed via our newly developed computational tool; which shows that there is a
-                                        correlation ($R^2 = 0.707$) between clear sky temperature and precipitable water. Our
-                                        research demonstrates the capability to measure and analyze precipitable water with low
-                                        cost instrumentation in higher altitude arid climate zones similar to those found in the
-                                        desert Southwest. We are building a platform to expand our tools and methods so that
-                                        they can be used to determine and analyse similar correlations over a greater variety of
-                                        climate zones.
-                                    </p>
-                                    <br />
-                                    <a href="./assets/img/ams100.png">
-                                        <img src="./assets/img/ams100.png" alt="" />
-                                    </a>
-                                </div>
-                                <br />
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h6>Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature
-                                        Readings: Field Observations</h6>
-                                    <p>
-                                        Precipitable water is the total amount of water vapor which is contained in a vertical
-                                        column of air that stretches from the Earth’s surface to the top of the atmosphere. It
-                                        is
-                                        expressed in terms of what the depth of liquid water would measure once all the water
-                                        vapor in the column is compressed down into liquid form. Meteorologists currently use
-                                        ground-based
-                                        global positioning systems (GPS), microwave radiometers (MWRI), and radiosondes to
-                                        measure precipitable water. Due to the cost and complexity of these instruments, the
-                                        number of
-                                        locations where these measurements are taken is limited; therefore most National Weather
-                                        Service (NWS) monitoring sites do not measure precipitable water. Meteorologists need
-                                        precipitable water measurements to help accurately forecast storm formation, strength,
-                                        and the likelihood of precipitation. We utilize the methodology from a previous study in
-                                        which relatively
-                                        low-cost infrared thermometers were used to determine the precipitable water over the
-                                        Gulf Coast of Texas. This approach is being tested in the climate zone found in Socorro,
-                                        NM using
-                                        daily ground and clear sky temperature measurements. This research demonstrates the
-                                        ability to measure precipitable water with low-cost tools in higher altitude arid
-                                        climate zones similar to
-                                        that found in the desert Southwest.
-                                    </p>
-                                    <br />
-                                    <a href="./assets/img/physcon2019.png">
-                                        <img src="./assets/img/physcon2019.png" alt="" />
-                                    </a>
-                                </div>
-                                <br />
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h6>Battery Testing and Comparison for Use in Off-Grid Home Powered Systems in New
-                                        Mexico</h6>
-                                    <p>
-                                        New Mexico has traditionally been a hub for off-grid power usage due to its many remote
-                                        locations, year-round sunny days, and high wind speeds. Recent technology and manufacturing
-                                        advances have made the costs of implementing solar and wind power in off-grid locations more
-                                        affordable. To get the most utility from these off-grid power systems, it is important to choose the best
-                                        battery type to store the energy collected. In this paper, we share the results of our testing on the three
-                                        most commonly available, and currently affordable, deep-cycle 12- volt batteries for use in off-grid
-                                        power systems in New Mexico. Our testing data from various charge, usage, and storage scenarios
-                                        highlights the differences and similarities in the performance and characteristics of these batteries,
-                                        including the energy-to-weight ratio, optimum charging current, internal resistance, and charge
-                                        retention timescale information for each battery. This performance data, combined with maintenance and cost
-                                        comparisons, is useful for determining which battery type to use in an off-grid power
-                                        system in New Mexico.
-                                    </p>
-                                    <br />
-                                    <a href="./assets/img/poster3.png">
-                                        <img src="./assets/img/poster3.png" alt="" />
-                                    </a>
-                                </div>
+                                <div id="presentations"></div>
                             </section>
                             <br />
                             <section id="school">
-                                <h4>Educational History <a href="." class="material-icons" style="color:cyan">arrow_upward</a>
-                                </h4>
+                                <h4>Educational History <a href="." class="material-icons" style="color:cyan">arrow_upward</a></h4>
                                 <hr/>
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h6>M.S. Atmospheric and Environmental Sciences</h6>
-                                    <b>South Dakota School of Mines and Technology</b> <br/>
-                                    <b>Rapid City, SD. In Progress</b>
-                                </div>
-                                <br />
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h6>BSc Physics w/ Atmospheric Physics Concentration</h6>
-                                    <b>New Mexico Institute of Mining and Technology</b> <br/>
-                                    <b>2020</b>
-                                </div>
-                                <br />
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h6>Associates Degree, Liberal Arts with emphasis in Math and Physics</h6>
-                                    <b>Central New Mexico Community College</b><br/>
-                                    <b>2016</b>
-                                </div>
-                                <br />
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h6>Certificate, Semiconductor Manufacturing Technology</h6>
-                                    <b>Luna Community College</b><br/>
-                                    <b>1996</b>
-                                </div>
-                                <br />
-                                <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
-                                    <h6>BA, History and French</h6>
-                                    <b>Eastern New Mexico University</b><br/>
-                                    <b>1994</b>
-                                </div>
+                                <div id="education"></div>
                             </section>
                         </div>
                    </div>
@@ -317,19 +119,7 @@
             </div><!-- #primary -->
         </div><!-- #content -->
     </div><!-- #page -->
-    <script src="https://unpkg.com/popper.js@1"></script>
-    <script src="https://unpkg.com/tippy.js@4"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-
-    <script type='text/javascript' src='./assets/js/camera.js?ver=1.0.2'></script>
-    <script type='text/javascript' src='./assets/js/hoverIntent.min.js'></script>
 </body>
 </html>
