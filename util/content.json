@@ -90,7 +90,7 @@
             "poster": "assets/img/physcon2019.png"
         },
         "conference2": {
-            "title": "Battery Testing and Comparison for Use in Off-Grid Home Powered Systems in New Mexico (TEst)",
+            "title": "Battery Testing and Comparison for Use in Off-Grid Home Powered Systems in New Mexico",
             "abstract": "New Mexico has traditionally been a hub for off-grid power usage due to its many remote locations, year-round sunny days, and high wind speeds. Recent technology and manufacturing advances have made the costs of implementing solar and wind power in off-grid locations more affordable. To get the most utility from these off-grid power systems, it is important to choose the best battery type to store the energy collected. In this paper, we share the results of our testing on the three most commonly available, and currently affordable, deep-cycle 12- volt batteries for use in off-grid power systems in New Mexico. Our testing data from various charge, usage, and storage scenarios highlights the differences and similarities in the performance and characteristics of these batteries, including the energy-to-weight ratio, optimum charging current, internal resistance, and charge retention timescale information for each battery. This performance data, combined with maintenance and cost comparisons, is useful for determining which battery type to use in an off-grid power system in New Mexico.",
             "poster": "assets/img/poster3.png"
         }
