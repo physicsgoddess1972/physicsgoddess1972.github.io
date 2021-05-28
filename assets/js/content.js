@@ -134,7 +134,8 @@ $(function(){
             var papauthor = document.createElement('b')
             var papjy = document.createElement('p')
             var papstatus = document.createElement('p')
-            var papdoi = document.createElement('button')
+            var papbutton = document.createElement('button')
+            var papdoi = document.createElement('a')
 
             papcard.setAttribute('style', "border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525")
             paptitle.setAttribute('id', String('paper-title' + i))
@@ -142,6 +143,7 @@ $(function(){
             papjy.setAttribute('id', String('paper-journal-year' + i))
             papstatus.setAttribute('id', String('paper-status' + i))
             papdoi.setAttribute('id', String('paper-link'+i))
+            papdoi.setAttribute('style', 'color: white')
             papstatus.setAttribute('style', 'float: right; margin-top: -3%')
 
             tree.appendChild(papcard)
@@ -150,7 +152,8 @@ $(function(){
             papcard.appendChild(document.createElement('br'))
             papcard.appendChild(papjy)
             papcard.appendChild(papstatus)
-            papcard.appendChild(papdoi)
+            papcard.appendChild(papbutton)
+            papbutton.appendChild(papdoi)
             tree.appendChild(document.createElement('br'))
 
             document.getElementById('paper').appendChild(tree)
