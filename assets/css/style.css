@@ -82,8 +82,8 @@ a img {
 body, button, input, select, textarea {
 	color: #47525c;
 	font-family: "Noto Sans", "Helvetica", sans-serif;
-	font-size: 1.6rem;
-	line-height: 1.7;
+	font-size: 1rem;
+	line-height: 1;
 	background-color:#252525;
 }
 
@@ -355,8 +355,8 @@ input[type="submit"],
 	border: none;
 	border-radius: 2px;
 	color: #fff;
-	font-size: 1.4rem;
-	padding: 10px 20px;
+	font-size: 1rem;
+	padding: 5px 5px;
 	-webkit-appearance: none;
 }
 

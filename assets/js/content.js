@@ -28,7 +28,7 @@ $(function(){
         Object.values(data.workhistory.current).forEach(val => {
             var tree = document.createDocumentFragment();
             var cwcard = document.createElement('div')
-            var cwrole = document.createElement('h5')
+            var cwrole = document.createElement('h6')
             var cwdesc = document.createElement('p')
             var cwplace = document.createElement('b')
 
@@ -43,8 +43,6 @@ $(function(){
             cwcard.appendChild(cwplace)
             tree.appendChild(document.createElement('br'))
 
-            console.log(Object.values(data.workhistory.current)[i].title)
-
             document.getElementById('current').appendChild(tree)
             $("#current-role" + i).html(Object.values(data.workhistory.current)[i].title)
             $("#current-description" + i).html(Object.values(data.workhistory.current)[i].description)
@@ -55,7 +53,7 @@ $(function(){
         Object.values(data.workhistory.previous).forEach(val => {
             var tree = document.createDocumentFragment();
             var pwcard = document.createElement('div')
-            var pwrole = document.createElement('h5')
+            var pwrole = document.createElement('h6')
             var pwdesc = document.createElement('p')
             var pwplace = document.createElement('b')
 
@@ -126,6 +124,42 @@ $(function(){
             $("#edu-degree" + i).html(Object.values(data.education)[i].degree)
             $("#edu-year" + i).html(Object.values(data.education)[i].year)
             $("#edu-place" + i).html(Object.values(data.education)[i].place)
+            i++
+        })
+        var i = 0
+        Object.values(data.papers).forEach(val => {
+            var tree = document.createDocumentFragment();
+            var papcard = document.createElement('div')
+            var paptitle = document.createElement('h6')
+            var papauthor = document.createElement('b')
+            var papjy = document.createElement('p')
+            var papstatus = document.createElement('p')
+            var papdoi = document.createElement('button')
+
+            papcard.setAttribute('style', "border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525")
+            paptitle.setAttribute('id', String('paper-title' + i))
+            papauthor.setAttribute('id', String('paper-author'+i))
+            papjy.setAttribute('id', String('paper-journal-year' + i))
+            papstatus.setAttribute('id', String('paper-status' + i))
+            papdoi.setAttribute('id', String('paper-link'+i))
+            papstatus.setAttribute('style', 'float: right; margin-top: -3%')
+
+            tree.appendChild(papcard)
+            papcard.appendChild(paptitle)
+            papcard.appendChild(papauthor)
+            papcard.appendChild(document.createElement('br'))
+            papcard.appendChild(papjy)
+            papcard.appendChild(papstatus)
+            papcard.appendChild(papdoi)
+            tree.appendChild(document.createElement('br'))
+
+            document.getElementById('paper').appendChild(tree)
+            $("#paper-title" + i).html(Object.values(data.papers)[i].title)
+            $("#paper-author" + i).html(Object.values(data.papers)[i].author)
+            $("#paper-journal-year" + i).html(Object.values(data.papers)[i].journal + ". " + Object.values(data.papers)[i].date)
+            $("#paper-status"+i).html(Object.values(data.papers)[i].status)
+            $("#paper-link"+i).attr({href: "https://doi.org/" + Object.values(data.papers)[i].doi})
+            $("#paper-link"+i).html("Web View")
             i++
         })
     })

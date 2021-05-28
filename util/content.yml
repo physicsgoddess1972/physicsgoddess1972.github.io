@@ -62,6 +62,14 @@ workhistory:
       place: Los Alamos National Lab. P-24 Plasma Physics
       city: Los Alamos
       state: NM
+papers:
+  paper0:
+    title: Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Observations
+    author: V. Kelsey, S. Riley, K. Minschwancher
+    date: 2021
+    journal: Atmospheric Measurement Techniques
+    status: Under Review
+    doi: 10.5194/amt-2021-130
 conferences:
   conference0:
     title: Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings
