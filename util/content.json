@@ -2,84 +2,84 @@
     "name": "Vicki Kelsey",
     "biography": "Graduate atmospheric sciences student at South Dakota School of Mines",
     "profile": "assets/img/profile.png",
-    "projects": {
-        "project0": {
+    "projects": [
+        {
             "title": "Precipitable Water Model",
             "description": "Using Infrared temperature reading to determine the amount of precipitable water in the desert south-west."
         },
-        "project1": {
+        {
             "title": "Lagrangian Atmospheric Model",
             "description": "Tested and troubleshooted Lagrangian Atmospheric Model designed to simulate Madden-Julian Oscillations."
         },
-        "project2": {
+        {
             "title": "Battery Testing and Comparison for Use in Off-Grid Home Powered Systems in New Mexico",
             "description": "Analyzing cost efficiency of battery types for sub-$700 off-grid solar systems in New Mexico."
         }
-    },
+    ],
     "workhistory": {
-        "current": {
-            "current0": {
+        "current": [
+            {
                 "title": "Lightning Research Technician",
                 "description": null,
                 "place": "Langmuir Lab",
                 "city": "Socorro",
                 "state": "NM"
             },
-            "current1": {
+            {
                 "title": "Student Researcher",
                 "description": null,
                 "place": "NWS/NOAA",
                 "city": "Albuquerque,",
                 "state": "NM"
             },
-            "current2": {
+            {
                 "title": "Atmospheric Science Graduate Teaching Assistant",
                 "description": null,
                 "place": "South Dakota School of Mines",
                 "city": "Rapid City",
                 "state": "SD"
             }
-        },
-        "previous": {
-            "previous0": {
+        ],
+        "previous": [
+            {
                 "title": "Atmospheric Research Catalouger",
                 "description": null,
                 "place": "Langmuir Lab",
                 "city": "Socorro",
                 "state": "NM"
             },
-            "previous1": {
+            {
                 "title": "Atmospheric Physics Research Assistant",
                 "description": "Worked on a project to utilize a Lagrangian Atmospheric Model to forecast Madden Julian Oscillations at various sea surface temperatures.",
                 "place": "New Mexico Tech",
                 "city": "Socorro",
                 "state": "NM"
             },
-            "previous2": {
+            {
                 "title": "Graduate Data Analysis Student Employee",
                 "description": "Worked with recent graduates to get their outcomes files updated, while meeting FERPA guidelines, and updated the information which was reported to the State of New Mexico and the US Department of Education. Helped those graduates looking for employment to make sure that they were utilizing all the services available through Job Connection Services at CNM to help them find employment.",
                 "place": "Central New Mexico Community College",
                 "city": "Albuquerque",
                 "state": "NM"
             },
-            "previous3": {
+            {
                 "title": "Test Wafer/Silicon Systems Engineer",
                 "description": "Managed silicon supply, quality control, anti-contamination procedures, and cost control for high volume manufacturing sites worldwide. Worked as part of various engineering teams and had a shared supervisory role for technicians across multiple sites and departments.",
                 "place": "Intel Corp",
                 "city": "Leixlip",
                 "state": "Ireland"
             },
-            "previous4": {
+            {
                 "title": "Graduate Research Assistant",
                 "description": "Worked as part of a team on classified projects that required a high level of attention to detail and precision",
                 "place": "Los Alamos National Lab. P-24 Plasma Physics",
                 "city": "Los Alamos",
                 "state": "NM"
             }
-        }
+        ]
     },
-    "papers": {
-        "paper0": {
+    "papers": [
+        {
             "title": "Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Observations",
             "author": "V. Kelsey, S. Riley, K. Minschwancher",
             "date": 2021,
@@ -87,49 +87,49 @@
             "status": "Under Review",
             "doi": "10.5194/amt-2021-130"
         }
-    },
-    "conferences": {
-        "conference0": {
+    ],
+    "conferences": [
+        {
             "title": "Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings",
             "abstract": "Precipitable water is primarily measured using radiosondes, ground-based global positioning systems (GPS), sun photometers, and microwave radiometry (MWRI). This limits the number of precipitable water measurement sites, which affects forecast accuracy in regards to storm formation, strength, and the potential for precipitation. Socorro, NM is among the sites that do not have the capability to measure precipitable water. Our research builds upon a previous study which determined an exponential relationship between infrared clear sky temperature measurements and precipitable water over the Gulf Coast of Texas. We are analyzing this relationship for the climate zone found in Socorro, NM. Daily ground and clear sky temperature measurements are being taken with low-cost infrared thermometers. Radiosonde precipitable water measurements from Albuquerque and Santa Teresa NWS monitoring sites are input into our dataset and analysed via our newly developed computational tool; which shows that there is a correlation ($R^2 = 0.707$) between clear sky temperature and precipitable water. Our research demonstrates the capability to measure and analyze precipitable water with low cost instrumentation in higher altitude arid climate zones similar to those found in the desert Southwest. We are building a platform to expand our tools and methods so that they can be used to determine and analyse similar correlations over a greater variety of climate zones.",
             "poster": "assets/img/ams100.png"
         },
-        "conference1": {
+        {
             "title": "Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings: Field Observations",
             "abstract": "Precipitable water is the total amount of water vapor which is contained in a vertical column of air that stretches from the Earth\u2019s surface to the top of the atmosphere. It is expressed in terms of what the depth of liquid water would measure once all the water vapor in the column is compressed down into liquid form. Meteorologists currently use ground-based global positioning systems (GPS), microwave radiometers (MWRI), and radiosondes to measure precipitable water. Due to the cost and complexity of these instruments, the number of locations where these measurements are taken is limited; therefore most National Weather Service (NWS) monitoring sites do not measure precipitable water. Meteorologists need precipitable water measurements to help accurately forecast storm formation, strength, and the likelihood of precipitation. We utilize the methodology from a previous study in which relatively low-cost infrared thermometers were used to determine the precipitable water over the Gulf Coast of Texas. This approach is being tested in the climate zone found in Socorro, NM using daily ground and clear sky temperature measurements. This research demonstrates the ability to measure precipitable water with low-cost tools in higher altitude arid climate zones similar to that found in the desert Southwest.",
             "poster": "assets/img/physcon2019.png"
         },
-        "conference2": {
+        {
             "title": "Battery Testing and Comparison for Use in Off-Grid Home Powered Systems in New Mexico",
             "abstract": "New Mexico has traditionally been a hub for off-grid power usage due to its many remote locations, year-round sunny days, and high wind speeds. Recent technology and manufacturing advances have made the costs of implementing solar and wind power in off-grid locations more affordable. To get the most utility from these off-grid power systems, it is important to choose the best battery type to store the energy collected. In this paper, we share the results of our testing on the three most commonly available, and currently affordable, deep-cycle 12- volt batteries for use in off-grid power systems in New Mexico. Our testing data from various charge, usage, and storage scenarios highlights the differences and similarities in the performance and characteristics of these batteries, including the energy-to-weight ratio, optimum charging current, internal resistance, and charge retention timescale information for each battery. This performance data, combined with maintenance and cost comparisons, is useful for determining which battery type to use in an off-grid power system in New Mexico.",
             "poster": "assets/img/poster3.png"
         }
-    },
-    "education": {
-        "school0": {
+    ],
+    "education": [
+        {
             "degree": "MS Atmospheric and Environmental Sciences",
             "place": "South Dakota School of Mines and Technology",
             "year": "In Progress"
         },
-        "school1": {
+        {
             "degree": "BSc Physics w/ Atmospheric Physics Concentration",
             "place": "New Mexico Institute of Mining and Technology",
             "year": 2020
         },
-        "school2": {
+        {
             "degree": "Associates Degree, Liberal Arts with emphasis in Math and Physics",
             "place": "Central New Mexico Community College",
             "year": 2016
         },
-        "school3": {
+        {
             "degree": "Certificate, Semiconductor Manufacturing Technology",
             "place": "Luna Community College",
             "year": 1996
         },
-        "school4": {
+        {
             "degree": "BA, History and French",
             "place": "Eastern New Mexico University",
             "year": 1994
         }
-    }
+    ]
 }
