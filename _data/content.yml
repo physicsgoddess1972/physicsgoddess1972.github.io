@@ -11,23 +11,19 @@ projects:
 workhistory:
   current:
     - title: Lightning Research Technician
-      description: null
       place: Langmuir Lab
       city: Socorro
       state: NM
     - title: Student Researcher
-      description: null
       place: NWS/NOAA
       city: Albuquerque,
       state: NM
     - title: Atmospheric Science Graduate Teaching Assistant
-      description: null
       place: South Dakota School of Mines
       city: Rapid City
       state: SD
   previous:
     - title: Atmospheric Research Catalouger
-      description:
       place: Langmuir Lab
       city: Socorro
       state: NM

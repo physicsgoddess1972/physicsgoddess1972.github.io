@@ -67,11 +67,12 @@
 									</ul>
 								</div>
 							</nav><!-- #site-navigation -->
-                            <h1 class="entry-title" id="name"></h1>
+                            <h1 class="entry-title">{{site.data.content.name}}</h1>
                             <div class="entry-subtitle">
                                 <p>
                                     <img class="alignnone size-medium wp-image-40"
-                                         id="profile-picture" alt="profile pictures"
+                                         src="{{site.data.content.profile}}"
+                                         alt="profile pictures"
                                          width="233" height="300"/>
                                 </p>
                             </div>
@@ -79,7 +80,7 @@
 								<h4>Biography</h4>
 								<hr/>
 								<div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515; background-color: #252525">
-									<p style="font-size: 12px" id="biography"></p>
+									<p style="font-size: 12px">{{site.data.content.biography}}</p>
 								</div>
 							</div>
                         </header>
@@ -89,35 +90,84 @@
                             <section id="research">
                                 <h4>Projects <a href="." class="material-icons" style="color:cyan">arrow_upward</a></h4>
                                 <hr/>
-                                <div id="project"></div>
+                                {% for projects in site.data.content %}
+                                    <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
+                                        <h6>{{projects.title}}</h6>
+                                        <p>{{projects.description}}</p>
+                                    </div>
+                                {% endfor %}
                             </section>
                             <br/>
                             <section id="jobs">
                                 <h4>How I paid the bills <a href="." class="material-icons" style="color:cyan">arrow_upward</a></h4>
                                 <hr/>
                                 <h4>Current</h4>
-                                <div id="current"></div>
+                                {% for jobs in site.data.content.workhistory.current %}
+                                    <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
+                                        <h6>{{jobs.title}}</h6>
+                                        {% if jobs.description != null %}
+                                            <p>{{jobs.description}}</p>
+                                        {% endif %}
+                                        <b>
+                                            {{jobs.place}}. {{jobs.city}}, {{jobs.state}}
+                                        </b>
+                                    </div>
+                                {% endfor %}
                                 <br />
                                 <h4>Previous</h4>
-                                <div id="previous"></div>
+                                {% for jobs in site.data.content.workhistory.previous %}
+                                    <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
+                                        <h6>{{jobs.title}}</h6>
+                                        {% if jobs.description != null %}
+                                            <p>{{jobs.description}}</p>
+                                        {% endif %}
+                                        <b>
+                                            {{jobs.place}}. {{jobs.city}}, {{jobs.state}}
+                                        </b>
+                                    </div>
+                                {% endfor %}
                             </section>
                             <br />
                             <section id="papers">
                                 <h4>Papers <a href="." class="material-icons" style="color:cyan">arrow_upward</a></h4>
                                 <hr/>
-                                <div id="paper"></div>
+                                {% for papers in site.data.content.papers %}
+                                    <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
+                                        <h6>{{papers.title}}</h6>
+                                        <b>{{papers.author}}</b>
+                                        <p>{{papers.journal}}. {{papers.date}}</p>
+                                        <p style="float: right; margin-top: -3%">{{papers.status}}</p>
+                                        <button>
+                                            <a href="https://doi.org/{{papers.doi}}">
+                                                Web View
+                                            </a>
+                                        </button>
+                                    </div>
+                                {% endfor %}
                             </section>
                             <br/>
                             <section id="conference">
                                 <h4>Conferences <a href="." class="material-icons" style="color: cyan">arrow_upward</a></h4>
                                 <hr/>
-                                <div id="presentations"></div>
+                                {% for talks in site.data.content.conferences %}
+                                    <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
+                                        <h6>{{talks.title}}</h6>
+                                        <p>{{talks.abstract}}</p>
+                                        <img src="{{talks.poster}}">
+                                    </div>
+                                {% endfor %}
                             </section>
                             <br />
                             <section id="school">
                                 <h4>Educational History <a href="." class="material-icons" style="color:cyan">arrow_upward</a></h4>
                                 <hr/>
-                                <div id="education"></div>
+                                {% for edus in site.data.content.education %}
+                                    <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
+                                        <h6>{{edus.degree}}</h6>
+                                        <b>{{edus.place}}</b>
+                                        <b>{{edus.year}}</b>
+                                    </div>
+                                {% endfor %}
                             </section>
                         </div>
                    </div>
