@@ -114,6 +114,7 @@ layout: null
                                             {{jobs.place}}. {{jobs.city}}, {{jobs.state}}
                                         </b>
                                     </div>
+				    <br>
                                 {% endfor %}
                                 <br />
                                 <h4>Previous</h4>
@@ -127,6 +128,7 @@ layout: null
                                             {{jobs.place}}. {{jobs.city}}, {{jobs.state}}
                                         </b>
                                     </div>
+				    <br>
                                 {% endfor %}
                             </section>
                             <br />
@@ -145,6 +147,7 @@ layout: null
                                             </a>
                                         </button>
                                     </div>
+				    <br>
                                 {% endfor %}
                             </section>
                             <br/>
@@ -157,6 +160,7 @@ layout: null
                                         <p>{{talks.abstract}}</p>
                                         <img src="{{talks.poster}}">
                                     </div>
+				    <br>
                                 {% endfor %}
                             </section>
                             <br />
@@ -169,6 +173,7 @@ layout: null
                                         <b>{{edus.place}}</b>
                                         <b>{{edus.year}}</b>
                                     </div>
+				    <br>
                                 {% endfor %}
                             </section>
                         </div>
@@ -180,4 +185,3 @@ layout: null
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
 </body>
-</html>
