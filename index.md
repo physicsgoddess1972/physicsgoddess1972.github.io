@@ -97,6 +97,7 @@ layout: null
                                         <h6>{{projects.title}}</h6>
                                         <p>{{projects.description}}</p>
                                     </div>
+				    <br>
                                 {% endfor %}
                             </section>
                             <br/>
@@ -170,8 +171,8 @@ layout: null
                                 {% for edus in site.data.content.education %}
                                     <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                         <h6>{{edus.degree}}</h6>
-                                        <b>{{edus.place}}</b>
-                                        <b>{{edus.year}}</b>
+                                        <b>{{edus.place}}</b><br>
+				    	<b>{{edus.year}}</b>
                                     </div>
 				    <br>
                                 {% endfor %}
