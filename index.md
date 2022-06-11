@@ -43,10 +43,10 @@ layout: null
                 <article id="post-5" class="post post-5 page type-page status-publish hentry">
                     <div class="container content-container">
                         <header class="entry-header">
-							<nav id="navbar-main" class="main-navigation widget" role="navigation">
-								<div class="menu" id="navbar-content">
-									<ul class="navbar-nav">
-										<li class="page_item page-item-8 nav-item">
+				<nav id="navbar-main" class="main-navigation widget" role="navigation">
+					<div class="menu" id="navbar-content">
+						<ul class="navbar-nav">
+							<li class="page_item page-item-8 nav-item">
                                             <a class="nav-link" href="#research" data-target="#research" style="color: cyan">
                                                 <span>Projects</span>
                                             </a>
@@ -92,7 +92,7 @@ layout: null
                             <section id="research">
                                 <h4>Projects <a href="." class="material-icons" style="color:cyan">arrow_upward</a></h4>
                                 <hr/>
-                                {% for projects in site.data.content %}
+                                {% for projects in site.data.content.projects %}
                                     <div style="border-left: 1px solid #151515; padding: 10px; box-shadow: 3px 5px #151515;background-color: #252525">
                                         <h6>{{projects.title}}</h6>
                                         <p>{{projects.description}}</p>
